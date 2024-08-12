@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html{
+  scroll-behavior: smooth;
+}
+body
+{
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+@font-face {
+  font-family: myfont;
+  src: url(Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+  font-family: mfont;
+  src: url(Provicali.otf);
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{font-family: myfont;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: -1px;    
+}
+header ul{
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+  font-family: mfont;
+    text-decoration: none;
+    padding: 6px 15px ;
+    color: black;
+
+}
+header ul li a:hover{
+    border-bottom: 3px solid black;
+    z-index: 10000;
+    font-family: myfont;
+
+}
+header ul{
+    font-size: 19px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    z-index: 10000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 8px;
+  }
+  .dropdown .dropbtn {
+    font-size: 19px;  
+    border: none;
+    outline: none;
+    color:rgb(223, 101, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: mfont;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+  
+  }
+  section img#af{
+    position: absolute;
+    transform: rotate(-5deg);
+    top: 160px;
+    left: 920px;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    z-index: -1;
+  }
+ 
+  section img#t{
+    top: 200px;
+     right: 875px;
+     rotate: 50;
+     width: 600px;
+     height: 600px;
+     object-fit: cover;
+       position: absolute;
+     transform: rotate(5deg);
+    z-index: -1;
+   }
+   section img#sh{
+   top: 80px;
+   left:550px;
+   transform: rotate(-1deg);
+     width: 250px;
+     height: 250px;
+     object-fit: cover;
+       position: absolute;
+     z-index:-3;
+  
+   }
+
+ .men{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  align-items: center;
+
+ z-index: 10;
+ } 
+ .men>h2{
+  color: #ddd;
+  font-size: 40px;
+margin-top: 50px;
+padding: 0px;
+  z-index: 1;
+  font-family: myfont;
+ }
+
+ #text{
+  top: 350px;
+  position: absolute;
+  white-space:nowrap ;
+  font-size: 6vw;
+right: 30px;
+font-family: myfont;
+  z-index: -2;
+ }
+ section img#m{
+  mix-blend-mode:screen;
+ }
+ #btn{
+  display: inline;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #000;
+  color:rgb(255, 255, 255);
+  transform: translateY(250px) ;
+  z-index: 100;
+ }
+ .women{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  align-items: center;
+
+ } 
+ .women>h2{
+  color: #ff96de;
+  font-size: 40px;
+margin-top: 50px;
+padding: 0px;
+  z-index: 1;
+  font-family: myfont;
+ }
+ .kid{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  align-items: center;
+
+ } 
+ .kid>h2{
+  color: rgb(255, 176, 28);
+  font-size: 40px;
+margin-top: 50px;
+padding: 0px;
+  z-index: 1;
+  font-family: myfont;
+ }
+
+ .su{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  align-items: center;
+  
+
+ } 
+ .su>h2{
+  color: rgb(33, 33, 33);
+  font-size: 40px;
+margin-top: 50px;
+padding: 0px;
+  z-index: 1;
+  font-family: myfont;
+ }
+
+ footer{
+  height: 50px;
+  width: 100%;
+  color: #ddd;
+  background-color:  rgb(33, 33, 33);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+ .container{
+margin-top: 50px;
+  height: 350px;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+ }
+ .container > .crd{
+  
+padding: 0px 0px;
+margin: 20px 45px;
+height: 350px;
+width: 350px;
+
+font-size: 10px;
+
+border-radius: 10px;
+border-width: 9px;
+border-color:  whitesmoke;
+
+
+
+background-color:  rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+ 
+
+.container > #card1{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(pt1.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card1:hover{
+  background-image: url(pt2.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card2{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(p1.webp);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card2:hover{
+  background-image: url(p2.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card3{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(sh1.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card3:hover{
+  background-image: url(sh2.webp);
+ 
+background-color: hsl(0, 0%, 100%);
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card4{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(h1.webp);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.container > #card4:hover{
+  background-image: url(h2.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+
+.txt ul{
+  display: flex; 
+  justify-content  : center;
+  align-items : center; 
+  gap: 280px;
+
+
+  }
+  .txt ul li{
+      list-style: none;
+      margin-top: 15px;
+      
+  }
+  .txt ul li a{
+    font-family: mfont;
+      text-decoration: none;
+      display: inline;
+      
+     
+     
+      color: rgb(219, 218, 218);
+  
+  }
+  .txt ul li a:hover{
+      
+      z-index: 10000;
+      font-family: mfont;
+  
+  }
+  .txt > #c2{
+    padding-left:20px ;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerw{
+  
+  margin-top: 60px;
+  height: 350px;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+ }
+ .containerw > .crd{
+  
+padding: 20px 20px;
+margin: 20px 45px;
+height: 350px;
+width: 350px;
+
+font-size: 10px;
+
+border-radius: 10px;
+border-width: 9px;
+border-color:  whitesmoke;
+
+
+background-color:  rgb(255, 82, 82);
+color: rgb(0, 0, 0);
+}
+
+.containerw > #card1{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(wpt2.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card1:hover{
+  background-image: url(wpt1.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card2{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(wp1.webp);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card2:hover{
+  background-image: url(wp2.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card3{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(wct2.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card3:hover{
+  background-image: url(wct1.webp);
+ 
+background-color: hsl(0, 0%, 100%);
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card4{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(wdd2.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerw > #card4:hover{
+  background-image: url(wdd1.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+
+
+
+.txtw ul{
+  display: flex; 
+  justify-content  : center;
+  align-items : center; 
+ 
+gap: 280px;
+
+  }
+  .txtw ul li{
+      list-style: none;
+      margin-top: 15px;
+      
+  }
+  .txtw ul li a{
+    font-family: mfont;
+      text-decoration: none;
+      display: inline;
+  
+     
+     
+      color: #ff96de;
+  
+  }
+  .txtw ul li a:hover{
+      
+      z-index: 10000;
+      font-family: mfont;
+  
+  }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.containerk{
+  margin-top: 60px;
+  height: 350px;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+ }
+ .containerk > .crd{
+  
+padding: 20px 20px;
+margin: 20px 45px;
+height: 350px;
+width: 350px;
+
+font-size: 10px;
+
+border-radius: 10px;
+border-width: 9px;
+border-color:  whitesmoke;
+
+
+background-color:  rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+.containerk > #card1{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(k2.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card1:hover{
+  background-image: url(k1.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card2{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(k3.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card2:hover{
+  background-image: url(k4.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card3{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(k5.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card3:hover{
+  background-image: url(k6.webp);
+ 
+background-color: hsl(0, 0%, 100%);
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card4{
+  display: flex;
+ align-items: center;
+  justify-content: center;
+background-image: url(k7.jpg);
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+.containerk > #card4:hover{
+  background-image: url(k8.webp);
+ 
+background-color: #ffffff;
+background-repeat: no-repeat;
+background-size: 250px 350px;
+
+}
+
+
+.txtk ul{
+  display: flex; 
+  justify-content  : center;
+  align-items : center; 
+  gap: 260px;
+
+
+  }
+  .txtk ul li{
+      list-style: none;
+      margin-top: 15px;
+      
+  }
+  .txtk ul li a{
+    font-family: mfont;
+      text-decoration: none;
+      display: inline;
+      
+   
+     
+      color: rgb(255, 176, 28);
+  
+  }
+  .txtk ul li a:hover{
+      
+      z-index: 10000;
+      font-family: mfont;
+  
+  }
+
+
+
+.su>.cb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+.fg>input{
+  width: 350px;
+    height: 40px;
+    margin-bottom: 22px;
+
+   
+}
+
+.fg > #e{
+  width: 704px;
+}
+.fg > #pin{
+  width: 704px;
+}
+.fg > #pwd{
+  width: 704px;
+}
+.fg > :placeholder-shown{
+font-family: mfont;
+
+}
+button{
+  background-color: #000000;
+  font-family: mfont;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  
+}
+button>a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
